@@ -26,7 +26,7 @@ jobs:
 
       - name: Install Puppeteer
         run: |
-          npm install --global puppeteer
+          npm install puppeteer
           # Install Chromium dependencies
           sudo apt-get update
           sudo apt-get install -y \
