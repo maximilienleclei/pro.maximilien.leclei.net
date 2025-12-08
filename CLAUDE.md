@@ -79,41 +79,6 @@ This is a single-page portfolio website for Maximilien Le Clei, hosted on GitHub
 - Links: Blue (#0000EE), underlined
 - Open-source contributions: Plain text, no hyperlinks
 
-## Local PDF Generation
-
-To generate the PDF locally for testing:
-
-```javascript
-// Install puppeteer first: npm install puppeteer
-
-const puppeteer = require('puppeteer');
-const path = require('path');
-const fs = require('fs');
-
-(async () => {
-  const browser = await puppeteer.launch({
-    headless: 'new',
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
-  });
-
-  const page = await browser.newPage();
-  const html = fs.readFileSync(path.join(process.cwd(), 'cv.html'), 'utf8');
-
-  await page.setContent(html, { waitUntil: 'networkidle0' });
-
-  await page.pdf({
-    path: 'cv.pdf',
-    format: 'Letter',
-    printBackground: true,
-    margin: { top: '20mm', right: '15mm', bottom: '20mm', left: '15mm' }
-  });
-
-  await browser.close();
-})();
-```
-
-Run with: `node [script-name].js`
-
 ## GitHub Setup
 
 ### Required Permissions
