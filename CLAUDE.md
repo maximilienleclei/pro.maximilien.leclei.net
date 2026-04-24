@@ -96,7 +96,7 @@ This is a single-page portfolio website for Maximilien Le Clei, hosted on GitHub
 - Target: `[USERNAME].github.io`
 
 ## Profile Links (for reference)
-- GitHub: https://github.com/MaximilienLC/
+- GitHub: https://github.com/maximilienleclei/
 - LinkedIn: https://www.linkedin.com/in/maximilienleclei/
 - Google Scholar: https://scholar.google.com/citations?user=Pm054IoAAAAJ&hl=en
 - Email: pro.maximilien@leclei.net
