@@ -1,4 +1,4 @@
-# CLAUDE.md - Context for Future Sessions
+# AGENTS.md - Context for Future Sessions
 
 ## Project Overview
 
@@ -137,7 +137,7 @@ This is a single-page portfolio website for Maximilien Le Clei, hosted on GitHub
 
 ## File Locations to Ignore
 - `.gitignore` includes: `node_modules/`, `package.json`, `package-lock.json`
-- `.claude/`, `.git/` - Standard directories
+- `.git/` - Standard directories
 
 ## Technology Stack
 - HTML5/CSS3
