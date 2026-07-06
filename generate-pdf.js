@@ -26,7 +26,7 @@ const fs = require('fs');
     path: 'cv.pdf',
     format: 'Letter',
     printBackground: true,
-    margin: { top: '20mm', right: '15mm', bottom: '20mm', left: '15mm' }
+    margin: { top: '8mm', right: '15mm', bottom: '8mm', left: '15mm' }
   });
 
   await browser.close();

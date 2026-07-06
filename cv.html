@@ -17,14 +17,14 @@
             line-height: 1.25;
             color: #000;
             background: white;
-            padding: 20px 0px 15px 0px;
+            padding: 8px 0px 12px 0px;
             max-width: 850px;
             margin: 0 auto;
         }
 
         header {
             text-align: center;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         h1 {
@@ -47,7 +47,8 @@
         }
 
         .underline {
-            text-decoration: underline;
+            text-decoration: none;
+            font-weight: 700;
         }
 
         .contact-info a {
@@ -58,15 +59,15 @@
         h2 {
             font-size: 15pt;
             font-weight: 600;
-            margin-top: 12px;
-            margin-bottom: 7px;
+            margin-top: 10px;
+            margin-bottom: 4px;
             color: #000;
             border-bottom: 1px solid #000;
             padding-bottom: 1px;
         }
 
         .job-header {
-            margin-top: 3px;
+            margin-top: 2px;
             margin-bottom: 0px;
             display: flex;
             justify-content: space-between;
@@ -89,6 +90,7 @@
 
         .job-date {
             font-size: 9.5pt;
+            color: #8B0000;
             text-align: right;
             white-space: nowrap;
             margin-left: 10px;
@@ -96,7 +98,7 @@
 
         .job-bullets {
             margin-left: 12px;
-            margin-bottom: 5px;
+            margin-bottom: 3px;
         }
 
         .job-bullets li {
@@ -132,6 +134,7 @@
 
         .edu-date {
             font-size: 9.5pt;
+            color: #8B0000;
             text-align: right;
             white-space: nowrap;
         }
@@ -148,10 +151,30 @@
             font-weight: 700;
         }
 
+        .publications {
+            font-size: 9.5pt;
+            line-height: 1.18;
+            margin-left: 12px;
+            margin-bottom: 2px;
+        }
+
+        .publications li {
+            margin-bottom: 1px;
+            padding-left: 2px;
+        }
+
+        .pub-title {
+            quotes: '"' '"';
+        }
+
+        .pub-venue {
+            font-style: italic;
+        }
+
         /* Print optimization */
         @media print {
             body {
-                padding: 15px 0px 10px 0px;
+                padding: 8px 0px 8px 0px;
                 font-size: 9.5pt;
                 line-height: 1.25;
             }
@@ -165,8 +188,7 @@
 <body>
     <header>
         <h1>Maximilien Le Cleï</h1>
-        <p class="subtitle">PhD student @ Mila (world's largest modern AI academic research center)</p>
-        <p class="subtitle">Previously: Lead Applied Research Scientist @ D-BOX Technologies (haptic motion technology)</p>
+        <p class="subtitle">Lead Applied Research Scientist @ <a href="https://www.d-box.com/en">D-BOX Technologies</a> | PhD student @ <a href="https://mila.quebec/en">Mila</a></p>
         <div class="contact-info">
             <span class="underline">Email / Website</span>: pro [dot] maximilien [at / dot] leclei [dot] net |
             <span class="underline">Google Scholar</span>: <a href="https://scholar.google.com/citations?user=Pm054IoAAAAJ&hl=en">link</a> |
@@ -179,24 +201,26 @@
 
     <div class="job-header">
         <div class="job-title-line">
-            <span class="job-title-bold">PhD Student Researcher @ Mila - Quebec AI Institute</span><span class="job-location">, Toronto (Remote), Canada</span>
+            <span class="job-title-bold">Lead Applied Research Scientist @ D-BOX Technologies</span><span class="job-location">, Toronto (Remote), Canada</span>
         </div>
-        <span class="job-date">Oct 2024 - Present</span>
+        <span class="job-date">Jan 2024 - Jun 2025 + Jul 2026 - Present</span>
     </div>
     <ul class="job-bullets">
-        <li>Human agentic & brain behaviour imitation (focus: continual learning & out-of-distribution generalization), GECCO 2024 publication</li>
+        <li>Convinced management and succesfully led the company in applying modern SOTA to imitate D-BOX haptic artist tracks (generative modeling of 1D signals – chair actuators displacement – with audio+video conditional diffusion transformers | state space models)</li>
+        <li>Strategized with leadership, given modeling successes, to create previously infeasible solution offerings predicted to significantly expand D-BOX's ~40M dollar revenue generating customer base, with generous newfound profit margins given AI-centricity</li>
+        <li>Training billion parameter models on terabytes of modern D-BOX data. Running carefully-crafted, systematic scaling experiments over task complexity, training regimes, architectural choices, input modalities, model capacities & dataset sizes</li>
+        <li>PhD research application: continual learning & out-of-distribution generalization, now building on 20+ years of D-BOX craftsmanship</li>
     </ul>
 
     <div class="job-header">
         <div class="job-title-line">
-            <span class="job-title-bold">Lead Applied Research Scientist @ D-BOX Technologies</span><span class="job-location">, Toronto (Remote), Canada</span>
+            <span class="job-title-bold">PhD Student Researcher @ Mila - Quebec AI Institute</span><span class="job-location">, Toronto (Remote), Canada</span>
         </div>
-        <span class="job-date">Jan 2024 - Jun 2025</span>
+        <span class="job-date">Oct 2024 - Mar 2027 (est.)</span>
     </div>
     <ul class="job-bullets">
-        <li>Convinced leadership and succesfully led the company in applying generative AI to imitate D-BOX haptic artist tracks (generative modeling of 1D signals – chair actuators displacement – with audio+video conditional diffusion transformers | state space models)</li>
-        <li>Strategized with leadership to create new solution offerings that are predicted to expand upon D-BOX's ~40M dollar revenue generating customer base, with generous newfound profit margins given AI-centricity</li>
-        <li>Trained billion parameter models on terabytes of data. Ran carefully-crafted, systematic scaling experiments over task complexity, training regimes, architectural choices, input modalities, model size & dataset size</li>
+        <li>Attempting to evolve beyong the AI paradigm: rawer human behaviour modeling through the expansion of random space exploration</li>
+        <li>Human agentic & brain behaviour imitation (focus: continual learning & out-of-distribution generalization), GECCO 2024 publication</li>
     </ul>
 
     <div class="job-header">
@@ -210,7 +234,7 @@
         <li>Technical contribution: audio model alignment with fMRI data to improve generalization, published in Imaging Neuroscience 2025</li>
         <li>Technical advising: large language model (LLM) fine-tuning + visual language model (VLM) for fMRI brain data alignment</li>
         <li>Evolutionary machine learning for human video game behaviour cloning & modern reinforcement learning benchmarks</li>
-        <li>First-author publications at major machine learning conferences : ICLR ALOE workshop 2022, GECCO 2022 & 2023</li>
+        <li>+ work leading to publications. First author: ICLR ALOE workshop 2022, GECCO 2022 & 2023; 2 x Imaging Neuroscience 2026</li>
     </ul>
 
     <div class="job-header">
@@ -235,6 +259,17 @@
         <li>Developed embroidery virtual environments of various complexity/fidelity & applied state-of-the-art deep reinforcement learning algorithms (DQN, Prioritized experience replay & Dueling Double-Q-Learning) to prototype highly capable embroidering agents</li>
     </ul>
 
+    <h2>Publications</h2>
+
+    <ol class="publications">
+        <li>Y Harel, B Pinsard, JA Boyle, A Cyr, <strong>M Le Cleï</strong>, P Mignot, M St-Laurent, K Jerbi, P Bellec. <span class="pub-title">"Gamer in the scanner: Event-related analysis of fMRI activity during retro videogame play guided by automated annotations of game content."</span> <span class="pub-venue">Imaging Neuroscience</span>, 2026.</li>
+        <li>M Freteault, <strong>M Le Cleï</strong>, L Tetrel, L Bellec, N Farrugia. <span class="pub-title">"Alignment of auditory artificial networks with massive individual fMRI brain data leads to generalisable improvements in brain encoding and downstream tasks."</span> <span class="pub-venue">Imaging Neuroscience</span>, 2025.</li>
+        <li>A Kemtur, F Paugam, B Pinsard, Y Harel, P Sainath, <strong>M Le Cleï</strong>, J Boyle, K Jerbi, P Bellec. <span class="pub-title">"Behavioral imitation with artificial neural networks leads to personalized models of brain dynamics during videogame play."</span> <span class="pub-venue">Imaging Neuroscience</span>, 2025.</li>
+        <li><strong>M Le Cleï</strong>, S Bar-Sheshet, P Bellec. <span class="pub-title">"Generational Information Transfer with Neuroevolution on Control Tasks."</span> <span class="pub-venue">GECCO</span>, 2024.</li>
+        <li><strong>M Le Cleï</strong>, P Bellec. <span class="pub-title">"Generative Adversarial Neuroevolution for Control Behaviour Imitation."</span> <span class="pub-venue">GECCO</span>, 2023.</li>
+        <li><strong>M Le Cleï</strong>, P Bellec. <span class="pub-title">"Neuroevolution of recurrent architectures on control tasks."</span> <span class="pub-venue">GECCO</span>, 2022.</li>
+    </ol>
+
     <h2>Education</h2>
 
     <div class="edu-header">
@@ -243,7 +278,7 @@
     </div>
     <div class="edu-header">
         <span class="edu-degree">Doctor of Philosophy - PhD, Computer Science (Artificial Intelligence)</span>
-        <span class="edu-date">Sep 2023 - Present</span>
+        <span class="edu-date">Sep 2023 - Mar 2027 (est.)</span>
     </div>
     <div class="edu-header">
         <span class="edu-degree">Master of Science - MSc, Computer science (Artificial Intelligence)</span>
@@ -259,12 +294,16 @@
         <span class="edu-date">Sep 2015 - Apr 2018</span>
     </div>
 
-    <h2>Skills</h2>
+    <h2>Software</h2>
 
     <div class="skills-section">
-        <p class="skills-line"><span class="skills-label">Topics:</span> generative AI, deep learning, evolutionary machine learning, high performance computing, imitation learning, reinforcement learning, continual learning, out-of-distribution generalization, computer vision, NLP, robotics, MLOps, CI/CD</p>
-        <p class="skills-line"><span class="skills-label">Technical:</span> Python, PyTorch, Lightning, JAX, Tensorflow, MPI, HuggingFace, Weights & Biases, Bash, Slurm, Hydra, Submitit, Docker, GCP, GitHub Actions, Git, Pre-commit, Sphinx, Beartype, Devcontainers, Pytest, Jaxtyping, Claude Code, Codex</p>
-        <p class="skills-line"><span class="skills-label">Open-source contributions:</span> google/evojax (scalable evolutionary machine learning), ROCm/TheRock (AMD ROCm/PyTorch)</p>
+        <p class="skills-line"><span class="skills-label">Research software:</span>
+            <a href="https://github.com/maximilienleclei/artificial_sapience_research">maximilienleclei/artificial_sapience_research</a> (paradigm evolution attempt: raw human behaviour + random space exploration),
+            <a href="https://github.com/courtois-neuromod/cneuromax">courtois-neuromod/cneuromax</a> (collaborative research workspace),
+            <a href="https://github.com/maximilienleclei/nevo">maximilienleclei/nevo</a> (evolutionary machine learning)</p>
+        <p class="skills-line"><span class="skills-label">Large public repositories:</span>
+            <a href="https://github.com/google/evojax">google/evojax</a> (scalable evolutionary machine learning),
+            <a href="https://github.com/rocm/therock">ROCm/TheRock</a> (AMD ROCm/PyTorch)</p>
     </div>
 </body>
 </html>
